@@ -66,22 +66,22 @@
 }
 
 .slide:nth-of-type(1) {
-    background-image: url(../img/BerlinBG_3_Big.png);
+    background-image: url(../img/BGbanner1.png);
 
 }
 
 .slide:nth-of-type(2) {
-    background-image: url(../img/2.jpg);
+    background-image: url(../img/BerlinBG_2_Big.png);
 
 }
 
 .slide:nth-of-type(3) {
-    background-image: url(../img/3.jpg);
+    background-image: url(../img/BerlinBG_3_Big.png);
 
 }
 
 .slide:nth-of-type(4) {
-    background-image: url(../img/4.jpg);
+    background-image: url(../img/BerlinBG_4_Big.png);
 }
 
 .bookBtn {

@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'HelveticaNeue-Roman';
+    src: url('../font/HelveticaNeueCyr-Roman.ttf');
+}
+
+@font-face {
+    font-family: 'HelveticaNeue-Bold';
+    src: url('../font/HelveticaNeueCyr-Bold.woff');
+}
+
+@font-face {
+    font-family: 'HelveticaNeue-Medium';
+    src: url('../font/HelveticaNeueCyr-Medium.woff');
+}
+
+#slides {
+
+    position: relative;
+    overflow: hidden;
+    height: 600px;
+    width: 300px;
+    list-style-type: none;
+
+}
+
+.slide {
+
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 1;
+
+    -webkit-transition: opacity 1s;
+
+    -moz-transition: opacity 1s;
+
+    -o-transition: opacity 1s;
+
+    transition: opacity 1s;
+
+}
+
+.showing {
+
+    opacity: 1;
+    z-index: 2;
+
+}
+
+.slide {
+
+    font-size: 40px;
+    padding: 40px;
+    box-sizing: border-box;
+    background: #333;
+    color: #fff;
+
+}
+
+.slide:nth-of-type(1) {
+    background-image: url(../img/BerlinBG_3_Big.png);
+
+}
+
+.slide:nth-of-type(2) {
+    background-image: url(../img/2.jpg);
+
+}
+
+.slide:nth-of-type(3) {
+    background-image: url(../img/3.jpg);
+
+}
+
+.slide:nth-of-type(4) {
+    background-image: url(../img/4.jpg);
+}
+
+.bookBtn {
+    position: relative;
+    width: 285px;
+    font-weight: 700;
+    font-size: 20px;
+    background-color: #ff4858;
+    background: linear-gradient(to top, #9c4545, #ff4858);
+    border: none;
+    border-radius: 3px;
+    left: 10px;
+    bottom: 65px;
+    z-index: 10;
+    height: 40px;
+    color: white;
+}
+
+.arrowRight {
+
+    display: block;
+    position: absolute;
+    z-index: 40;
+    bottom: 131px;
+    right: 220px;
+    width: 50px;
+    height: 50px;
+    background: url(../img/arrowRight.png) no-repeat;
+
+}
+
+.container {
+    margin: 0 auto;
+    position: relative;
+    width: 300px;
+    height: 600px;
+    font-family: 'HelveticaNeue-Medium';
+}
+
+.slideBar {
+
+    position: relative;
+    bottom: 40px;
+    right: 42px;
+    display: inline-block;
+    width: 180px;
+    height: 630px;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.6);
+    visibility: hidden;
+    animation-duration: 4s;
+    z-index: 40;
+}
+
+#sideBar2, #sideBar3, #sideBar4, #sideBar5 {
+    animation-duration: 4s;
+    position: relative;
+    bottom: 40px;
+    right: 42px;
+}
+
+.switchPage {
+    position: absolute;
+    top: 16px;
+    left: 20px;
+    width: 150px;
+    height: 150px;
+    background: url(../img/logo.png) no-repeat
+
+}
+
+.titleSwitchPage {
+    position: absolute;
+    top: 112px;
+    left: 20px;
+    width: 150px;
+    height: 150px;
+    background: url(../img/Berlin.png) no-repeat
+
+}
+
+.map {
+    position: absolute;
+    top: 455px;
+    left: 55px;
+    width: 90px;
+    height: 90px;
+    background: url(../img/map.png) no-repeat
+
+}
+
+.arrowLeft {
+    position: absolute;
+    top: 464px;
+    left: 12px;
+    width: 90px;
+    height: 90px;
+    background: url(../img/arrowLeft.png) no-repeat;
+}
+
+.arrowRightSwitch {
+    position: absolute;
+    top: 465px;
+    left: 125px;
+    width: 90px;
+    height: 90px;
+    background: url(../img/arrowRight.png) no-repeat;
+}
+
+.container h6 {
+    margin: 184px 0 0 20px;
+    font-stretch: ultra-expanded;
+}
+
+.container span {
+    position: relative;
+    font-size: 12px;
+    color: #ff4858;
+    bottom: 28px;
+    left: 20px;
+    font-weight: bold;
+
+}
+
+.container p {
+
+    font-size: 24px;
+    position: relative;
+    left: 22px;
+    bottom: 5px;
+
+    margin-right: 45px;
+
+    font-weight: bold;
+
+}
+
+.price {
+    margin: 28px 0 0 0;
+}
+
+.price span {
+    color: white;
+    font-size: 16px;
+    font-weight: normal;
+    position: relative;
+    top: -5px;
+    left: -4px;
+}
+
+@keyframes sideBarRight {
+    0% {
+        right: 100%;
+    }
+    50% {
+        right: 20%;
+    }
+
+}
+
+@keyframes sideBarLeft {
+    0% {
+        right: 20%;
+    }
+    50% {
+        right: 100%;
+    }
+    100% {
+        right: 100%;
+    }
+}
